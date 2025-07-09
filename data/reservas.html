@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/css.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Borealle</h2>
+                <p>Digital Wallet</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="active">Inicio</a></li>
+                    <li><a href="./reservas.html">Reservas</a></li>
+                    <li><a href="./platos.html">Platos</a></li>
+                    <li><a href="./clientes.html">Clientes</a></li>
+                    <li><a href="./mesas.html">Mesas</a></li>
+                </ul>
+            </nav>
+            <div class="logout" onclick="">Iniciar sesión</div>
+        </aside>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        const links = document.querySelectorAll('nav ul li a');
+        links.forEach(link => {
+            if (link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+</html>

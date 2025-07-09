@@ -1,0 +1,192 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y color del texto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor general */
+.container {
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #2f2f2f;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.logo {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #f9b233;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a {
+    color: #ccc; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    display: block; /* Hace que todo el área del enlace sea clickeable */
+    padding: 15px 20px;
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para los efectos */
+}
+
+/* Estilo cuando el enlace está activo o al pasar el ratón */
+nav ul li:hover, nav ul li a:hover, nav ul li.active {
+    background-color: #f9b233;
+    color: black;
+}
+
+/* Logout */
+.logout {
+    padding: 15px 20px;
+    border-top: 1px solid #444;
+    color: #ccc;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+    background-color: #f9b233;
+    color: black;
+}
+
+/* Contenido principal */
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Encabezado principal */
+.header {
+    background-color: #f9b233;
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Tarjetas */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+    text-align: center;
+    padding: 15px;
+    background-color: #f9b233;
+    color: white;
+    font-size: 18px;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.card-content .count {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f9b233;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilos de los enlaces en el menú lateral */
+nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #f9b233;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e08e26;
+}
+
+.btn-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #e53935;
+}
