@@ -1,0 +1,74 @@
+/* Estilo general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Caja del formulario */
+form#loginForm {
+  background-color: #2e2e2e;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  width: 320px;
+  text-align: center;
+}
+
+/* Inputs */
+form#loginForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Botón */
+form#loginForm button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ff7e00;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form#loginForm button:hover {
+  background-color: #ffa31a;
+}
+
+/* Enlaces */
+a {
+  color: #ffde89;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mensaje de error */
+#error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}

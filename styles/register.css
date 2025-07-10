@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Caja del formulario de registro */
+form#registerForm {
+  background-color: #2e2e2e;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  width: 320px;
+  text-align: center;
+}
+
+/* Título */
+h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* Inputs */
+form#registerForm input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Botón registrar */
+form#registerForm button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #ff7e00;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form#registerForm button:hover {
+  background-color: #ffa31a;
+}
+
+/* Mensajes y enlaces */
+#mensaje {
+  margin-top: 10px;
+  font-size: 14px;
+  color: limegreen;
+  text-align: center;
+}
+
+a {
+  color: #ffde89;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin-top: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
