@@ -62,8 +62,14 @@
     // Mostrar nombre del usuario desde localStorage
     const usuario = JSON.parse(localStorage.getItem("usuarioActivo"));
     const divBienvenida = document.getElementById("bienvenida");
-    if (usuario && usuario.usuario) {
-      divBienvenida.innerHTML = `Bienvenido, <strong>${usuario.usuario}</strong>`;
+    if (usuario) {
+      const nombre = usuario.nombre || "";
+      const foto = usuario.foto || "";
+      let html = `Bienvenido, <strong>${nombre}</strong>`;
+      if (foto) {
+        html += ` <img src="${foto}" alt="Foto de ${nombre}" class="foto-perfil">`;
+      }
+      divBienvenida.innerHTML = html;
     }
 
     // Cerrar sesión
