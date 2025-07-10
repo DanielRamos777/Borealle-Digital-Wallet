@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Reservas</title>
     <link rel="stylesheet" href="../styles/css.css">
 </head>
 <body>
     <div class="container">
-        <!-- Menú lateral -->
         <aside class="sidebar">
             <div class="logo">
                 <h2>Borealle</h2>
@@ -16,8 +15,8 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="../dashboard.html" class="active">Inicio</a></li>
-                    <li><a href="./reservas.html">Reservas</a></li>
+                    <li><a href="../dashboard.html">Inicio</a></li>
+                    <li><a href="./reservas.html" class="active">Reservas</a></li>
                     <li><a href="./platos.html">Platos</a></li>
                     <li><a href="./clientes.html">Clientes</a></li>
                     <li><a href="./mesas.html">Mesas</a></li>
@@ -25,16 +24,27 @@
             </nav>
             <div class="logout" onclick="">Iniciar sesión</div>
         </aside>
+        <main class="main">
+            <header class="header">
+                <h2>Reservas</h2>
+            </header>
+            <button id="nuevaReserva" class="btn btn-primary">Agregar</button>
+            <div style="display:flex; gap:20px; margin-top:20px;">
+                <table id="tablaReservas" border="1" style="width:60%;">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Cliente</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="detalleReserva" style="flex-grow:1;"></div>
+            </div>
+        </main>
     </div>
-
-
-
-
-
-
-
-
-
+    <script src="../js/reserva.js"></script>
     <script>
         const links = document.querySelectorAll('nav ul li a');
         links.forEach(link => {
@@ -43,6 +53,5 @@
             }
         });
     </script>
-
 </body>
 </html>
