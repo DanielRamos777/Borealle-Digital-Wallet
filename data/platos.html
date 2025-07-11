@@ -16,15 +16,37 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="../dashboard.html" class="active">Inicio</a></li>
+                    <li><a href="../dashboard.html">Inicio</a></li>
                     <li><a href="./reservas.html">Reservas</a></li>
-                    <li><a href="./platos.html">Platos</a></li>
+                    <li><a href="./platos.html" class="active">Platos</a></li>
                     <li><a href="./clientes.html">Clientes</a></li>
                     <li><a href="./mesas.html">Mesas</a></li>
                 </ul>
             </nav>
             <div class="logout" onclick="">Iniciar sesión</div>
         </aside>
+        <main class="main">
+            <header class="header">
+                <h2>Platos</h2>
+            </header>
+            <form id="formPlato" style="margin-bottom:20px;">
+                <input type="text" id="titulo" placeholder="Título" required>
+                <input type="text" id="descripcion" placeholder="Descripción" required>
+                <input type="url" id="imagen" placeholder="URL de la imagen" required>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+            <table id="tablaPlatos" border="1" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Imagen</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </main>
     </div>
 
 
@@ -35,6 +57,7 @@
 
 
 
+    <script src="../js/platos.js"></script>
     <script>
         const links = document.querySelectorAll('nav ul li a');
         links.forEach(link => {
