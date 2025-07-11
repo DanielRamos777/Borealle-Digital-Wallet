@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nueva Reserva - Fecha y Hora</title>
     <link rel="stylesheet" href="../styles/css.css">
+    <style>
+        form label{ display:block; margin-bottom:10px; }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -19,19 +22,20 @@
                     <li><a href="../data/reservas.html" class="active">Reservas</a></li>
                 </ul>
             </nav>
+            <div class="logout" id="cerrarSesion">Cerrar sesión</div>
         </aside>
         <main class="main">
             <header class="header">
                 <h2>Fecha y hora</h2>
             </header>
             <form id="formFechaHora">
-                <label>Fecha: <input type="date" id="fecha" required></label><br>
-                <label>Hora: <input type="time" id="hora" required></label><br>
-                <label>Personas: <input type="number" id="personas" min="1" required></label><br>
+                <label>Fecha: <input type="date" id="fecha" required></label>
+                <label>Hora: <input type="time" id="hora" required></label>
+                <label>Personas: <input type="number" id="personas" min="1" max="10" required></label>
                 <button type="submit" class="btn btn-primary">Siguiente</button>
             </form>
         </main>
     </div>
-    <script src="../js/reserva.js"></script>
+    <script src="../js/proceso-reserva.js"></script>
 </body>
 </html>
