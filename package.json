@@ -1,0 +1,18 @@
+{
+  "name": "borealle-digital-wallet",
+  "version": "1.0.0",
+  "description": "This repository now includes a simple Flask backend located in `backend/app.py` implementing a reservation system for a restaurant. The API uses SQLite and exposes endpoints to manage clients, tables, dishes, reservations and orders.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
