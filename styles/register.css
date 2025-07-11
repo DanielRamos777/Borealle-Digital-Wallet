@@ -10,6 +10,16 @@ body {
   color: white;
 }
 
+/* Caja principal con efecto de transparencia */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
 /* Caja del formulario de registro */
 form#registerForm {
   background-color: #2e2e2e;
@@ -38,6 +48,15 @@ form#registerForm input {
   color: white;
   font-size: 14px;
   outline: none;
+  transition: background-color 0.3s ease;
+}
+
+form#registerForm input::placeholder {
+  color: #bbb;
+}
+
+form#registerForm input:focus {
+  background-color: #555;
 }
 
 /* Botón registrar */
