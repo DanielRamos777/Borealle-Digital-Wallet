@@ -14,5 +14,13 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielRamos777/Borealle-Digital-Wallet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DanielRamos777/Borealle-Digital-Wallet/issues"
+  },
+  "homepage": "https://github.com/DanielRamos777/Borealle-Digital-Wallet#readme"
 }
