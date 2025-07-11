@@ -72,3 +72,10 @@ a:hover {
   text-align: center;
   font-size: 14px;
 }
+
+@media (max-width: 480px) {
+  form#loginForm {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

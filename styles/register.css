@@ -77,3 +77,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 480px) {
+  form#registerForm {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
