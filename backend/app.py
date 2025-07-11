@@ -223,7 +223,7 @@ def listar_reservas():
     reservas = Reserva.query.all()
     result = []
     for r in reservas:
-        result.append({'id': r.id, 'fecha': r.fecha, 'hora': r.hora, 'personas': r.personas, 'total': r.total})
+        result.append({'id': r.id, 'fecha': r.fecha, 'hora': r.hora, 'personas': r.personas, 'estado': r.estado, 'total': r.total})
     return jsonify(result)
 
 @app.route('/reservas/<int:id>', methods=['GET'])
@@ -312,6 +312,14 @@ def resumen_reserva(id):
         'mesa': {'numero': mesa.numero, 'ubicacion': mesa.ubicacion},
         'pedidos': pedidos
     })
+
+# ---------------------------- DASHBOARD STATS ---------------------------------
+@app.route('/dashboard/stats', methods=['GET'])
+def dashboard_stats():
+    pendientes = Reserva.query.filter_by(estado='Pendiente').count()
+    platos = Plato.query.count()
+    mesas = Mesa.query.count()
+    return jsonify({'reservas_pendientes': pendientes, 'platos': platos, 'mesas': mesas})
 
 if __name__ == '__main__':
     app.run(debug=True)
